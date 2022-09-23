@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "\"*.m\"": "\"Matlab\"",
-        "vector": "cpp"
+        "vector": "cpp",
+        "map": "cpp"
     }
 }

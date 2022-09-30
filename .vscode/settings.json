@@ -1,10 +1,14 @@
 {
-    "files.associations": {
-        "\"*.m\"": "\"Matlab\"",
-        "vector": "cpp",
-        "map": "cpp",
-        "utility": "cpp",
-        "numbers": "cpp",
-        "numeric": "cpp"
-    }
+  "files.associations": {
+    "\"*.m\"": "\"Matlab\"",
+    "vector": "cpp",
+    "map": "cpp",
+    "utility": "cpp",
+    "numbers": "cpp",
+    "numeric": "cpp",
+    "iostream": "cpp"
+  },
+  "files.exclude": {
+    "**/*.exe": true
+  }
 }

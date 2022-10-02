@@ -4,10 +4,12 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\msys64\\mingw64\\include\\c++\\11.3.0\\x86_64-w64-mingw32"
+                "C:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32",
+                "C:\\msys64\\mingw64\\include\\c++\\12.2.0\\",
+                "C:\\msys64\\mingw64\\include\\c++\\12.2.0\\bits\\"
             ],
             "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe"
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe"
         }
     ],
     "version": 4

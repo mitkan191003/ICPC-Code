@@ -6,9 +6,8 @@
     "utility": "cpp",
     "numbers": "cpp",
     "numeric": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "iosfwd": "cpp"
   },
-  "files.exclude": {
-    "**/*.exe": true
-  }
+  "files.exclude": {}
 }

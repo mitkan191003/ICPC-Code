@@ -9,5 +9,7 @@
     "iostream": "cpp",
     "iosfwd": "cpp"
   },
-  "files.exclude": {}
+  "files.exclude": {
+    "**/*.exe": true
+  }
 }

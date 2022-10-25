@@ -1,5 +1,5 @@
-#pragma GCC optimize ("O3")
-#pragma GCC target ("sse4")
+// #pragma GCC optimize ("O3")
+// #pragma GCC target ("sse4")
 #include <bits/stdc++.h>
 using namespace std;
 // https://codeforces.com/problemset/problem/1607/D
@@ -15,6 +15,13 @@ int findidx(vector<int>& vec, int val) {
 	}
 }
 
+void print(vector<int>& vec) {
+    for (int i = 0; i < vec.size(); i++) {
+        cout << vec[i] << " ";
+    }
+    cout << endl;
+}
+
 int main(){
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
@@ -24,32 +31,24 @@ int main(){
     	cin.rdbuf(infile.rdbuf());
 	}
 
-	int cases, length, x, input, idx, output;
+	int cases, length, x, input, idx;
+	vector<int> vec;
 	cin >> cases;
 	for (int i = 0; i < cases; i++) {
 		cin >> length >> x;
-		vector<int> vec;
-		idx = 0;
-		output = 0;
-		for (int j = 0; j < length; j++) {
-			cin >> input;
-			vec.push_back(input);
-		}
+        for (int i = 0; i < length; i++) {
+            cin >> input;
+            vec.push_back(input);
+        }
 		sort(vec.begin(), vec.end());
-		for (int j = 0; j < vec.size(); j++) {
-			// if (length == 1) {
-			// 	output++;
-			// 	break;
-			// }
-			idx = findidx(vec, vec[j] * x);
-			if (idx != -1) {
-				vec.erase(vec.begin() + idx);
-			}
-			else {
-				output++;
+		print(vec);
+		cout << endl;
+		for (int i = 0; i < vec.size(); i++) {
+			if (findidx(vec, vec[i] * x) != -1) {
+				cout << i << " " << i * x << endl;
 			}
 		}
-		cout << output << endl;
 	}
-	return output;
+	return vec.size();
+	// return 0;
 }

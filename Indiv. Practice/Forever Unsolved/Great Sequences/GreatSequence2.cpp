@@ -1,5 +1,5 @@
-#pragma GCC optimize ("O3")
-#pragma GCC target ("sse4")
+// #pragma GCC optimize ("O3")
+// #pragma GCC target ("sse4")
 #include <bits/stdc++.h>
 using namespace std;
 // https://codeforces.com/problemset/problem/1607/D
@@ -39,8 +39,14 @@ int main(){
 		// vector<int> vec;
 		for (int j = 0; j < length; j++) {
 			cin >> input;
-            idx = findidx(vec, input / x);
-            if (idx != -1 && input % x == 0) {
+			if (input % 2 == 0) {
+            	idx = findidx(vec, input / x);
+			}
+			else {
+				idx = -1;
+			}
+
+            if (idx != -1) {
                 vec.erase(vec.begin() + idx);
             }
             else {
@@ -54,6 +60,14 @@ int main(){
             }
         }
 		cout << vec.size() << endl;
+		// sort(vec.begin(), vec.end());
+		print(vec);
+		cout << endl;
+		for (int i = 0; i < vec.size(); i++) {
+			if (findidx(vec, vec[i] * 2) != -1) {
+				cout << i << " " << i * 2 << endl;
+			}
+		}
 	}
 	return vec.size();
 	// return 0;

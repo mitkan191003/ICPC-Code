@@ -1,5 +1,6 @@
 // #pragma GCC optimize ("O3")
 // #pragma GCC target ("sse4")
+// https://codeforces.com/group/VyuYdsEvzv/contest/407622/problem/B
 #include <bits/stdc++.h>
 using namespace std;
 

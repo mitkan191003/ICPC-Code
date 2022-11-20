@@ -2,6 +2,7 @@
 #pragma GCC target ("sse4")
 #include <bits/stdc++.h>
 using namespace std;
+// https://codeforces.com/contest/1746/problem/A
  
 int main(){
 	ios_base::sync_with_stdio(false);

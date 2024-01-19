@@ -1,13 +1,15 @@
 {
   "files.associations": {
     "\"*.m\"": "\"Matlab\"",
+    "*.m": "matlab",
     "vector": "cpp",
     "map": "cpp",
     "utility": "cpp",
     "numbers": "cpp",
     "numeric": "cpp",
     "iostream": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "valarray": "cpp"
   },
   "files.exclude": {
     "**/*.exe": true

@@ -26,7 +26,7 @@ int main(){
             cin >> arr[i];
         }
 
-        cout << BiggestInversion(arr) << endl;
+        cout << BiggestInversion(arr) << "\n";
     }
 
     return 0;
